@@ -44,7 +44,7 @@ jobs:
             JWT_SECRET=mysecretkey1234
             EOF
 
-            echo "📦 Desplegando contenedor..."
+            echo "📦 Desplegando contenedor...."
             sudo docker pull agente47/get-product-by-id-service:latest
             sudo docker network inspect my_global_network >/dev/null 2>&1 || \
               sudo docker network create my_global_network
