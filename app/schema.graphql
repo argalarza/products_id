@@ -1,0 +1,11 @@
+type Query {
+  getProductById(id: ID!): Product
+}
+
+type Product {
+  _id: ID!
+  name: String
+  description: String
+  price: Float
+  brand: String
+}
