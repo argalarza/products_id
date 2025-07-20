@@ -28,7 +28,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.EC2_KEY }}
           script: |
-            echo "🛠️ Instalando Docker y Docker Compose si no existen....."
+            echo "🛠️ Instalando Docker y Docker Compose si no existen......."
             if ! command -v docker &> /dev/null; then
               sudo yum update -y
               sudo yum install -y docker
